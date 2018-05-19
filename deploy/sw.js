@@ -1,8 +1,9 @@
-var cacheName = 'TodoApp';
+var cacheName = 'Todo';
 var filesToCache = [
   '/',
-  '../index.html',
-  '../css/style.css',
+  'index.html',
+  'style.css',
+  'app.js',
    
 ];
 self.addEventListener('install', function(e) {

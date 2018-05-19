@@ -1,5 +1,5 @@
 body {
-    background-image: url("../icon/bg.jpg" );
+    background-image: url("icon/bg.jpg" );
     /* color: black; */
   }
   .vertical-container {
@@ -19,6 +19,7 @@ body {
     font-size: 30px;
   }
   h1.vertical-container {
+    
     color: rgb(58, 207, 187);
     font-size: 275%;
   }

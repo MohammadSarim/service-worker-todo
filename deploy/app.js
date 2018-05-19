@@ -42,7 +42,21 @@ function crateElement(text, element, className) {
     var textNode = document.createTextNode(text);
     li.appendChild(textNode);
     li.setAttribute('class', className);
-    return li;
+    var btn = document.createElement('BUTTON');
+            btn.innerText = 'x';
+            btn.setAttribute('class', 'btn float-right btn-success btn-sm');
+            var button = li.appendChild(btn);
+            button.style.Color = "white";
+            // li.id = snapshot.key;
+            btn.onclick = function () {
+                var li = this.parentNode;
+                var ul = li.parentNode;
+                ul.removeChild(li);
+                var del = li.id;
+                firebase.database().ref("todoApp/").child(del).remove();
+                console.log(del);
+            }
+            return li;
 
     
 }
